@@ -171,19 +171,16 @@ print("-_"*20)
 print("Top 3 Students By Gpa") #top 3 students
 print(survey_data.sort_values(by='GPA', ascending = False).head(3))
 
-print("-_"*20)
 plt.bar(df["School sport played"], df["GPA"])
 plt.xlabel("Sports Played")
 plt.ylabel("GPA")
 plt.show()
 
-print("-_"*20)
 plt.hist(df["GPA"], bins=40, edgecolor='black')
 plt.xlabel('GPA')
 plt.ylabel('Frequency')
 plt.show()
 
-print("-_"*20)
 plt.scatter(df["Favorite number"], df["GPA"], color='blue')
 plt.xlabel('Favorite Number')
 plt.ylabel('GPA')
